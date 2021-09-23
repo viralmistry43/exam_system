@@ -18,4 +18,15 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'shoulda-matchers'
+  gem 'database_cleaner-active_record'
+  gem 'rails-controller-testing'
+  gem 'rspec-rails'
+  gem 'rspec_junit_formatter'
+
+  gem 'simplecov'
+  gem 'simplecov-cobertura'
+end
+
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

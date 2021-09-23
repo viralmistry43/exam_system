@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="47" skipped="0" failures="0" errors="0" time="1.528999" timestamp="2021-09-23T16:38:56+05:30" hostname="ViRaL">
+<properties>
+<property name="seed" value="12098"/>
+</properties>
+<testcase classname="spec.models.exam_spec" name="Exam association is expected to have many topics through subjects" file="./spec/models/exam_spec.rb" time="0.048124"></testcase>
+<testcase classname="spec.models.exam_spec" name="Exam association is expected to have many questions through chapters" file="./spec/models/exam_spec.rb" time="0.004029"></testcase>
+<testcase classname="spec.models.exam_spec" name="Exam association is expected to have many chapters through topics" file="./spec/models/exam_spec.rb" time="0.002811"></testcase>
+<testcase classname="spec.models.exam_spec" name="Exam association is expected to have many subjects" file="./spec/models/exam_spec.rb" time="0.004702"></testcase>
+<testcase classname="spec.models.exam_spec" name="Exam validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/exam_spec.rb" time="0.011941"></testcase>
+<testcase classname="spec.models.exam_spec" name="Exam validations is expected to validate that the length of :name is at most 255" file="./spec/models/exam_spec.rb" time="0.008194"></testcase>
+<testcase classname="spec.models.exam_spec" name="Exam validations is expected to validate that :date cannot be empty/falsy" file="./spec/models/exam_spec.rb" time="0.015228"></testcase>
+<testcase classname="spec.models.subject_spec" name="Subject validations is expected to validate that :standard cannot be empty/falsy" file="./spec/models/subject_spec.rb" time="0.007379"></testcase>
+<testcase classname="spec.models.subject_spec" name="Subject validations is expected to validate that the length of :standard is at most 255" file="./spec/models/subject_spec.rb" time="0.006917"></testcase>
+<testcase classname="spec.models.subject_spec" name="Subject validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/subject_spec.rb" time="0.006780"></testcase>
+<testcase classname="spec.models.subject_spec" name="Subject validations is expected to validate that the length of :name is at most 255" file="./spec/models/subject_spec.rb" time="0.006156"></testcase>
+<testcase classname="spec.models.subject_spec" name="Subject association is expected to belong to exam required: true" file="./spec/models/subject_spec.rb" time="0.004349"></testcase>
+<testcase classname="spec.models.subject_spec" name="Subject association is expected to have many questions through chapters" file="./spec/models/subject_spec.rb" time="0.003104"></testcase>
+<testcase classname="spec.models.subject_spec" name="Subject association is expected to have many topics" file="./spec/models/subject_spec.rb" time="0.002583"></testcase>
+<testcase classname="spec.models.subject_spec" name="Subject association is expected to have many chapters through topics" file="./spec/models/subject_spec.rb" time="0.002496"></testcase>
+<testcase classname="spec.models.question_option_spec" name="QuestionOption validations is expected to validate that :option cannot be empty/falsy" file="./spec/models/question_option_spec.rb" time="0.009790"></testcase>
+<testcase classname="spec.models.question_option_spec" name="QuestionOption validations is expected to validate that the length of :option is at most 255" file="./spec/models/question_option_spec.rb" time="0.004010"></testcase>
+<testcase classname="spec.models.question_option_spec" name="QuestionOption association is expected to belong to question required: true" file="./spec/models/question_option_spec.rb" time="0.007238"></testcase>
+<testcase classname="spec.models.user_spec" name="User association is expected to have many answers" file="./spec/models/user_spec.rb" time="0.003924"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that the length of :email is at most 255" file="./spec/models/user_spec.rb" time="0.005971"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :email cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.008829"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that the length of :name is at most 255" file="./spec/models/user_spec.rb" time="0.018004"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.041792"></testcase>
+<testcase classname="spec.controller.v1.questions_controller_spec" name="V1::QuestionsController GET /questions in questions#index status 200: Return all questions" file="./spec/controller/v1/questions_controller_spec.rb" time="0.154349"></testcase>
+<testcase classname="spec.models.topic_spec" name="Topic association is expected to have many chapters" file="./spec/models/topic_spec.rb" time="0.003586"></testcase>
+<testcase classname="spec.models.topic_spec" name="Topic association is expected to belong to subject required: true" file="./spec/models/topic_spec.rb" time="0.009277"></testcase>
+<testcase classname="spec.models.topic_spec" name="Topic association is expected to have many questions through chapters" file="./spec/models/topic_spec.rb" time="0.006017"></testcase>
+<testcase classname="spec.models.topic_spec" name="Topic validations is expected to validate that :topic_number cannot be empty/falsy" file="./spec/models/topic_spec.rb" time="0.007356"></testcase>
+<testcase classname="spec.models.topic_spec" name="Topic validations is expected to validate that the length of :name is at most 255" file="./spec/models/topic_spec.rb" time="0.005943"></testcase>
+<testcase classname="spec.models.topic_spec" name="Topic validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/topic_spec.rb" time="0.010888"></testcase>
+<testcase classname="spec.models.answer_spec" name="Answer association is expected to belong to question required: true" file="./spec/models/answer_spec.rb" time="0.005570"><system-err>DEPRECATION WARNING: Calling `&lt;&lt;` to an ActiveModel::Errors message array in order to add an error is deprecated. Please call `ActiveModel::Errors#add` instead. (called from question_option_validation at /Users/viral/workspace/job/exam_system/app/models/answer.rb:13)
+</system-err></testcase>
+<testcase classname="spec.models.answer_spec" name="Answer association is expected to belong to question_option optional: true" file="./spec/models/answer_spec.rb" time="0.004433"><system-err>DEPRECATION WARNING: Calling `&lt;&lt;` to an ActiveModel::Errors message array in order to add an error is deprecated. Please call `ActiveModel::Errors#add` instead. (called from question_option_validation at /Users/viral/workspace/job/exam_system/app/models/answer.rb:13)
+</system-err></testcase>
+<testcase classname="spec.models.answer_spec" name="Answer association is expected to belong to user required: true" file="./spec/models/answer_spec.rb" time="0.003865"><system-err>DEPRECATION WARNING: Calling `&lt;&lt;` to an ActiveModel::Errors message array in order to add an error is deprecated. Please call `ActiveModel::Errors#add` instead. (called from question_option_validation at /Users/viral/workspace/job/exam_system/app/models/answer.rb:13)
+</system-err></testcase>
+<testcase classname="spec.models.chapter_spec" name="Chapter association is expected to belong to topic required: true" file="./spec/models/chapter_spec.rb" time="0.006853"></testcase>
+<testcase classname="spec.models.chapter_spec" name="Chapter association is expected to have many questions" file="./spec/models/chapter_spec.rb" time="0.003123"></testcase>
+<testcase classname="spec.models.chapter_spec" name="Chapter validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/chapter_spec.rb" time="0.009014"></testcase>
+<testcase classname="spec.models.chapter_spec" name="Chapter validations is expected to validate that :chapter_number cannot be empty/falsy" file="./spec/models/chapter_spec.rb" time="0.014896"></testcase>
+<testcase classname="spec.models.chapter_spec" name="Chapter validations is expected to validate that the length of :name is at most 255" file="./spec/models/chapter_spec.rb" time="0.010530"></testcase>
+<testcase classname="spec.controller.v1.answers_controller_spec" name="V1::AnswersController POST /answers in answers#create status 422: Return Unprocessable Entity" file="./spec/controller/v1/answers_controller_spec.rb" time="0.022739"><system-err>DEPRECATION WARNING: Calling `&lt;&lt;` to an ActiveModel::Errors message array in order to add an error is deprecated. Please call `ActiveModel::Errors#add` instead. (called from question_option_validation at /Users/viral/workspace/job/exam_system/app/models/answer.rb:13)
+</system-err></testcase>
+<testcase classname="spec.controller.v1.answers_controller_spec" name="V1::AnswersController POST /answers in answers#create status 201: Return Answers Store Successfully." file="./spec/controller/v1/answers_controller_spec.rb" time="0.023080"></testcase>
+<testcase classname="spec.controller.v1.answers_controller_spec" name="V1::AnswersController POST /answers in answers#create status 201: Return Answers Store Successfully (skip) ." file="./spec/controller/v1/answers_controller_spec.rb" time="0.016987"></testcase>
+<testcase classname="spec.models.question_spec" name="Question association is expected to have many question_options" file="./spec/models/question_spec.rb" time="0.002413"></testcase>
+<testcase classname="spec.models.question_spec" name="Question association is expected to belong to chapter required: true" file="./spec/models/question_spec.rb" time="0.004370"></testcase>
+<testcase classname="spec.models.question_spec" name="Question validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/question_spec.rb" time="0.014995"></testcase>
+<testcase classname="spec.models.question_spec" name="Question validations is expected to validate that the length of :name is at most 255" file="./spec/models/question_spec.rb" time="0.009252"></testcase>
+<testcase classname="spec.models.question_spec" name="Question validations is expected to validate that :question_number cannot be empty/falsy" file="./spec/models/question_spec.rb" time="0.008734"></testcase>
+<testcase classname="spec.controller.v1.users_controller_spec" name="V1::UsersController GET /user/percentage in users#user_percentage status 200: Return user percentage" file="./spec/controller/v1/users_controller_spec.rb" time="0.154579"></testcase>
+</testsuite>
