@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Exam System
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 3.0.0
 
-* System dependencies
+* Below step to run application
+  - `bundle install`
+  - `rails db:create db:migrate db:seed`
+  - `rails s`
 
-* Configuration
 
-* Database creation
+* Listed api url
+  - POST 'http://localhost:3000/v1/answers'
+    - body parameters
+    ```
+      params: {
+        question_id: 1, question_option_id: 3, skip: false
+      }
+      ```
+  - GET 'http://localhost:3000/v1/questions'
+  - GET 'http://localhost:3000/v1/user/percentage'
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* How to run rspec
+  - `bundle exec rspec` or `rspec`
